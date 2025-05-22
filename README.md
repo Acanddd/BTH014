@@ -27,5 +27,6 @@ Install the necessary dependencies by running:
 2.To run tests with coverage tracking, use:
 
   ```bash
-  coverage run -m pytest
-  coverage report
+  coverage run --source=pickle_1 -m pytest whitebox_pickle_test.py
+  coverage report --include=pickle_1.py
+```
